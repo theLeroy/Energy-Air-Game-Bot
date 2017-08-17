@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         Energy Air Game Bot
-// @namespace    http://tampermonkey.net/
-// @version      1.0
+// @namespace    https://github.com/Tomzilla12/Energy-Air-Game-Bot
+// @version      1.1
 // @description  Go through the Energy Air Game automatically
-// @author       You
+// @author       Tomzilla12: https://github.com/Tomzilla12
 // @match        *game.energy.ch/*
+// @run-at       document-end
 // @grant        none
 // ==/UserScript==
 
