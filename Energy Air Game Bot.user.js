@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name         Energy Air Game Bot
 // @namespace    https://github.com/Tomzilla12/Energy-Air-Game-Bot
-// @version      1.1
+// @version      1.2
 // @description  Go through the Energy Air Game automatically
 // @author       Tomzilla12: https://github.com/Tomzilla12
 // @match        *game.energy.ch/*
 // @run-at       document-end
 // @grant        none
+// @updateURL    https://openuserjs.org/install/Tomzilla12/Energy_Air_Game_Bot.user.js
+// @downloadURL    https://openuserjs.org/install/Tomzilla12/Energy_Air_Game_Bot.user.js
 // ==/UserScript==
 
 (function() {
