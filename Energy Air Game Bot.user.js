@@ -7,8 +7,8 @@
 // @match        *game.energy.ch/*
 // @run-at       document-end
 // @grant        none
-// @updateURL    https://openuserjs.org/install/Tomzilla12/Energy_Air_Game_Bot.user.js
-// @downloadURL    https://openuserjs.org/install/Tomzilla12/Energy_Air_Game_Bot.user.js
+// @updateURL    https://openuserjs.org/meta/Tomzilla12/Energy_Air_Game_Bot.meta.js
+// @downloadURL  https://openuserjs.org/install/Tomzilla12/Energy_Air_Game_Bot.user.js
 // ==/UserScript==
 
 (function() {
