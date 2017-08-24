@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         Energy Tickets
 // @namespace    https://github.com/Tomzilla12/Energy-Air-Game-Bot
-// @version      1.0
+// @version      1.1
 // @description  Color the Energy Tickets when clicked
 // @author       Tomzilla12: https://github.com/Tomzilla12
 // @match        *energy.ch/*
 // @run-at       document-idle
 // @grant        none
-// @updateURL    
-// @downloadURL  
+// @updateURL    https://openuserjs.org/meta/Tomzilla12/Energy_Tickets.meta.js
+// @downloadURL  https://openuserjs.org/install/Tomzilla12/Energy_Tickets.install.js
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js
 // ==/UserScript==
 
