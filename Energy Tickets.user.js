@@ -8,7 +8,7 @@
 // @run-at       document-idle
 // @grant        none
 // @updateURL    https://openuserjs.org/meta/Tomzilla12/Energy_Tickets.meta.js
-// @downloadURL  https://openuserjs.org/install/Tomzilla12/Energy_Tickets.install.js
+// @downloadURL  https://openuserjs.org/install/Tomzilla12/Energy_Tickets.user.js
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js
 // ==/UserScript==
 
