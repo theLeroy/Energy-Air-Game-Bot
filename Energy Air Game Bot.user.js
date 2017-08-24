@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Energy Air Game Bot
 // @namespace    https://github.com/Tomzilla12/Energy-Air-Game-Bot
-// @version      1.2
+// @version      1.3
 // @description  Go through the Energy Air Game automatically
 // @author       Tomzilla12: https://github.com/Tomzilla12
 // @match        *game.energy.ch/*
@@ -9,7 +9,18 @@
 // @grant        none
 // @updateURL    https://openuserjs.org/meta/Tomzilla12/Energy_Air_Game_Bot.meta.js
 // @downloadURL  https://openuserjs.org/install/Tomzilla12/Energy_Air_Game_Bot.user.js
+// @require      https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js
 // ==/UserScript==
+
+(function($) {
+    $.fn.isBgColor = function(color) {
+        var thisBgColor = this.eq(0).css('backgroundColor');
+        var computedColor = $('<div/>').css({ 
+            backgroundColor: color
+        }).css('backgroundColor');
+        return thisBgColor === computedColor;
+    }
+})(jQuery);
 
 (function() {
     'use strict';
@@ -80,6 +91,8 @@
         window.location = forwardUrl;
     } else if ($('#wingame h1').html() == 'Das war das falsche Logo, knapp daneben! Versuche es erneut!') {
         window.location = "https://game.energy.ch/includes/restart.php";
+    } else if ($('body').isBgColor('#ffffff')) {
+        window.location = "https://game.energy.ch/";
     }
     
     var question = $('.question > h1').html();
