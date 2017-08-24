@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Energy Tickets
 // @namespace    https://github.com/Tomzilla12/Energy-Air-Game-Bot
-// @version      1.1
-// @description  Color the Energy Tickets when clicked
+// @version      1.2
+// @description  Color the Energy Tickets when clicked (at first, press any key when the page is loaded)
 // @author       Tomzilla12: https://github.com/Tomzilla12
 // @match        *energy.ch/*
 // @run-at       document-idle
