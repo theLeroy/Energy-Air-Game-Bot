@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Energy Air Game Bot
 // @namespace    https://github.com/Tomzilla12/Energy-Air-Game-Bot
-// @version      1.3
+// @version      1.4
 // @description  Go through the Energy Air Game automatically
 // @author       Tomzilla12: https://github.com/Tomzilla12
 // @match        *game.energy.ch/*
@@ -91,7 +91,7 @@
         window.location = forwardUrl;
     } else if ($('#wingame h1').html() == 'Das war das falsche Logo, knapp daneben! Versuche es erneut!') {
         window.location = "https://game.energy.ch/includes/restart.php";
-    } else if ($('body').isBgColor('#ffffff')) {
+    } else if ($('body').isBgColor('#ffffff') || /error/i.test($('h1').html)) {
         window.location = "https://game.energy.ch/";
     }
     
