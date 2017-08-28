@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Energy Air Game Bot
 // @namespace    https://github.com/Tomzilla12/Energy-Air-Game-Bot
-// @version      1.4
+// @version      1.5
 // @description  Go through the Energy Air Game automatically
 // @author       Tomzilla12: https://github.com/Tomzilla12
 // @match        *game.energy.ch/*
@@ -79,19 +79,25 @@
     ];
     
     if ($('h1').html() == 'GEWINNE JETZT TICKETS MIT DEM ENERGY AIR GAME') {
+        // Game start
         $('input#mobile').val(phone);
         $('button:submit').click();
     } else if ($('#gameover h2').html() == 'GAME OVER') {
+        // Game over
         window.location = "https://game.energy.ch/includes/restart.php";
     } else if ($('#decision h2').html() == 'Glückwunsch!') {
+        // Quiz done
         $('button:submit').click();
     } else if ($('#wingame h1').html() == 'Hinter welchem Energy Air Logo versteckt sich das Ticket?') {
+        // Pick EAir Logo
         //var rnd = Math.floor((Math.random() * 12));
         var forwardUrl = document.URL + '?ticket=' + 0;
         window.location = forwardUrl;
     } else if ($('#wingame h1').html() == 'Das war das falsche Logo, knapp daneben! Versuche es erneut!') {
+        // Restart
         window.location = "https://game.energy.ch/includes/restart.php";
-    } else if ($('body').isBgColor('#ffffff') || /error/i.test($('h1').html)) {
+    } else if (!$('body').isBgColor('#5ba0d7')) {
+        // Other site (i.e. Error-Page) --> Refresh
         window.location = "https://game.energy.ch/";
     }
     
